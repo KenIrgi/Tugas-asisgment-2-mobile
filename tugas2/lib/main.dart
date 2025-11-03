@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: 'Poppins',
-        // warna latar (AARRGGBB) — contoh: alpha FF + warna #F8EFFB
+        
         scaffoldBackgroundColor: const Color(0xFFF8EFFB),
       ),
 
