@@ -19,7 +19,7 @@ class MoviePage extends StatelessWidget {
             title: Text(movies[index]),
             trailing: const Icon(Icons.chevron_right),
             onTap: () {
-              // sementara belum ke detail page
+              
             },
           );
         },
