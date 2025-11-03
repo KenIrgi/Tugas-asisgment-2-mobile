@@ -5,7 +5,7 @@ class TheaterPage extends StatelessWidget {
 
   const TheaterPage({super.key, required this.city});
 
-  // Data bioskop per kota (ngarang sesuai permintaan)
+  
   Map<String, List<String>> getTheaters() {
     return {
       'Jakarta': [
