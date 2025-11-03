@@ -24,19 +24,19 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFF8EFFB),
       ),
 
-      // halaman awal
+      
       initialRoute: '/login',
 
-      // rute biasa (tanpa argumen)
+      
       routes: {
         '/login': (context) => const LoginPage(),
-        '/signup': (context) => const SignUpPage(), // <-- PENTING: cocok dengan class SignUpPage
+        '/signup': (context) => const SignUpPage(), 
         '/city': (context) => const CityPage(),
         '/movie': (context) => const MoviePage(),
       },
 
-      // onGenerateRoute untuk rute yang butuh argumen (mis. ke halaman bioskop/theater)
-      onGenerateRoute: (settings) {
+      
+      
         if (settings.name == '/bioskop' || settings.name == '/theater') {
           final args = settings.arguments;
           final cityName = args is String ? args : 'Unknown';
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
             settings: settings,
           );
         }
-        return null; // biarkan Flutter handle rute lain
+        return null; 
       },
     );
   }
